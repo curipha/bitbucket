@@ -9,6 +9,6 @@ How to use
 2. Create `tmp` directory in the same directory in which you put `bitbucket.php`.
 3. Set writable permission to the `tmp` directory.
 
-This script has no functionarity of access control.
-You may set up `.htaccess` and `.htpasswd`.
+This script has no functionality of access control.
+You may need to set up `.htaccess` and `.htpasswd`.
 
