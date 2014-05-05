@@ -43,8 +43,8 @@ class BitBucket {
       $str = '';
     }
     else {
-      $str = str_replace("\r", '', $_POST['t']);
-      $str = trim($str . "\n");
+      $str = str_replace("\r", '', $_POST['t']);  // Kill CR
+      $str = trim($str, "\n");
     }
 
     return $str;
@@ -137,7 +137,7 @@ MSG;
     }
 
     if (empty($files)) {
-      $list .= "<li>Nothing</li>";
+      $list .= '<li>Nothing</li>';
     }
     else {
       rsort($files);
