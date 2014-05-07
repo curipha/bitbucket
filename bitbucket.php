@@ -45,6 +45,8 @@ class BitBucket {
     else {
       $str = str_replace("\r", '', $_POST['t']);  // Kill CR
       $str = trim($str, "\n");
+
+      $str .= "\n"; // Add a new line at the end of the string
     }
 
     return $str;
