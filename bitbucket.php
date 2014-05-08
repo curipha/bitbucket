@@ -57,7 +57,7 @@ class BitBucket {
     $fp = fopen($this->getfilepath(), 'xb', false);
 
     if ($fp === false) {
-      output('Can not open a file with write mode.', 'red');
+      $this->output('Can not open a file with write mode.', 'red');
       exit();
     }
     else {
